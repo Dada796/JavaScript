@@ -1,107 +1,83 @@
-// STRINGS-text characters in double or single quotes
-const firstName = "John";
-const lastName = "Doe";
-const middleName = "Oluwasegun";
+// CONDITIONAL STATEMENT
+console.log("conditional statement");
+// if(condition){
+// action
+// lines of code
+// }
+if (1 < 2) {
+  console.log("ola");
+}
 
-// STRING PROPERTIES
-console.log(firstName.length, middleName.length);
-// string concatenation- joining of strings (+ a+b)
-const fullName = firstName + " " + lastName;
-console.log(fullName);
-console.log(fullName.length);
+let balance = 6000;
+let amount = 2000;
 
-// STRING METHODS- built in js functions that works on strings
-// toUpperCase, toLowerCase
-console.log(fullName.toUpperCase());
-console.log(fullName.toLowerCase());
+if (balance >= amount) {
+  balance -= amount;
+  console.log("Transfer successful, balance is " + balance);
+}
+// determine if the password is long enough ( >= 10)
+// improved your logic check if the password contains '#'- good password
 
-// startsWith, endsWith, includes
-console.log(fullName.startsWith("J"));
-console.log(fullName.endsWith("oe"));
-console.log(fullName.includes("n D"));
+const password = "#password1234";
+if (password.length >= 10 && password.includes("#")) {
+  console.log("password is good enough");
+}
 
-// REPLACE AND replaceAll
-console.log(fullName.replace("o", "#"));
-console.log(fullName.replaceAll("o", "#"));
+const age = 18;
+if (age >= 18) {
+  console.log("This user is eligible to vote");
+}
+// if else statement
+if (9 > 7) {
+  console.log("YES");
+} else {
+  console.log("NO");
+}
 
-const myEmailAddress = "sdada9757@gmail.com";
-console.log(myEmailAddress.length);
-console.log(myEmailAddress.toUpperCase());
-console.log(myEmailAddress.replace("@", "*"));
-console.log(myEmailAddress.includes("m"));
-console.log(myEmailAddress.endsWith("google.com"));
+if (balance >= amount) {
+  balance -= amount;
+  console.log("Transfer successful, balance is " + balance);
+} else {
+  console.log("Insufficient funds");
+}
 
-// charAt, indexOf, lastIndexOf
-// zero based language(assigning position from 0)
-console.log(myEmailAddress.charAt(2));
-console.log(myEmailAddress.indexOf("a"));
-console.log(myEmailAddress.lastIndexOf("a"));
+const num = 76;
+if (num > 0) {
+  console.log("The number is positive");
+} else {
+  console.log("The number is negative");
+}
+const number1 = 2;
+if (number1 % 2 == 0) {
+  console.log("this number is even");
+} else {
+  console.log("this number is odd");
+}
+// multiple else statement
+const censusResult = 500;
+if (censusResult >= 300) {
+  console.log("OVER POPULATED");
+} else if (censusResult <= 50) {
+  console.log("UNDER POPULATED");
+} else {
+  console.log("BALANCED POPULATION");
+}
+// LOTTERY SYSTEM FOR A COMPANY 4 CHOICES a b c(winner) d
+const usersChoice = "a";
+if (usersChoice === "c") {
+  console.log("Congratulations, you are amazing");
+} else {
+  console.log("Try Again");
+}
 
-// concat, trim, slice, substring, substr
-console.log(fullName.concat(" is my name"));
-
-// trim removes white spaces
-const username = "     user001    ";
-console.log(username);
-console.log(username.trim());
-console.log(username.trimStart());
-console.log(username.trimEnd());
-
-// Extract portions of a string
-const surname = "Brooke";
-// slice, substring(start, end(non-inlusive))
-console.log(surname.slice(2, 5));
-console.log(surname.substring(2, 5));
-
-// substr (start, number of characters)
-console.log(surname.substr(2, 2));
-
-// concatenation
-const author = "Chinua Achebe";
-const bookTitle = "Things Fall Apart";
-const yearPublished = 1997;
-
-// Template literals
-const summary= `The book ${bookTitle} written by ${author.toUpperCase()} was published in the year ${yearPublished}`
-
-const summary2= `${author} wrote the book ${bookTitle}`
-console.log(summary2);
-
-// quote Tinubu said and I quote 'Let the Poor Breathe'
-const quote = `Tinubu said and I quote 'Let the Poor Breathe'`;
-console.log(quote);
-// CLASS WORK
-const greeting = "hello world"
-console.log(greeting.toUpperCase());
-
-const js = "JAVASCRIPT"
-console.log(js.toLowerCase());
-
-const hello = "Hello"
-console.log(hello.charAt(0));
-
-const HW = "Hello world"
-console.log(HW.slice(6,11));
-
-const myLikes = "i like cats"
-console.log(myLikes.replace("cats", "dogs"));
-
-const hail = "Hello world"
-console.log(hail.startsWith("Hello"));
-
-const charNum = "sokratis papastathopoulos"
-console.log(charNum.length);
-
-const nickName = "Dada"
-const favClub = "madrid"
-
-const summary3 = `I am ${nickName} and my favorite club is ${favClub}`
-console.log(summary3);
-
-
-
-
-
-
-
-
+// LOTTERY SYSTEM FOR A COMPANY 4 CHOICES a(car) b(try again) c(winner) d(blender)
+const usersChoiceB = "a";
+if (usersChoiceB === "a") {
+  console.log("CAR");
+} else if (usersChoiceB === "c") {
+  console.log("WINNER");
+} else if (usersChoiceB === "d") {
+  console.log("BLENDER");
+} else {
+  console.log("TRY AGAIN");
+}
