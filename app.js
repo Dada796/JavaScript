@@ -1,83 +1,38 @@
-// CONDITIONAL STATEMENT
-console.log("conditional statement");
-// if(condition){
-// action
-// lines of code
-// }
-if (1 < 2) {
-  console.log("ola");
-}
+let teama = 96 + 108 + 89;
+let teamb = 88 + 91 + 110;
+let teamaAverage = teama / 3;
+let teambAverage = teamb / 3;
 
-let balance = 6000;
-let amount = 2000;
+console.log(teamaAverage);
+console.log(teambAverage);
+if (teamaAverage > teambAverage) {
+  console.log(`team A has a higher average score ${teamaAverage}`);
+} else if (teambAverage > teamaAverage) {
+  console.log(`team B has a higher average score ${teambAverage}`);
+} else {
+  console.log("it is a draw");
+}
+let item1 = 120;
+let item2 = 80;
+let item3 = 150;
+let totalCost = item1 + item2 + item3;
+let accBalance = 400;
 
-if (balance >= amount) {
-  balance -= amount;
-  console.log("Transfer successful, balance is " + balance);
-}
-// determine if the password is long enough ( >= 10)
-// improved your logic check if the password contains '#'- good password
+accBalance >= totalCost
+  ? console.log("You can checkout")
+  : console.log("Insufficient Funds");
+let ageRating = 18;
+let age = 22;
+age >= ageRating
+  ? console.log("You can watch the movie")
+  : console.log("You are not old enough to watch this movie");
 
-const password = "#password1234";
-if (password.length >= 10 && password.includes("#")) {
-  console.log("password is good enough");
-}
-
-const age = 18;
-if (age >= 18) {
-  console.log("This user is eligible to vote");
-}
-// if else statement
-if (9 > 7) {
-  console.log("YES");
-} else {
-  console.log("NO");
-}
-
-if (balance >= amount) {
-  balance -= amount;
-  console.log("Transfer successful, balance is " + balance);
-} else {
-  console.log("Insufficient funds");
-}
-
-const num = 76;
-if (num > 0) {
-  console.log("The number is positive");
-} else {
-  console.log("The number is negative");
-}
-const number1 = 2;
-if (number1 % 2 == 0) {
-  console.log("this number is even");
-} else {
-  console.log("this number is odd");
-}
-// multiple else statement
-const censusResult = 500;
-if (censusResult >= 300) {
-  console.log("OVER POPULATED");
-} else if (censusResult <= 50) {
-  console.log("UNDER POPULATED");
-} else {
-  console.log("BALANCED POPULATION");
-}
-// LOTTERY SYSTEM FOR A COMPANY 4 CHOICES a b c(winner) d
-const usersChoice = "a";
-if (usersChoice === "c") {
-  console.log("Congratulations, you are amazing");
-} else {
-  console.log("Try Again");
-}
-
-// LOTTERY SYSTEM FOR A COMPANY 4 CHOICES a(car) b(try again) c(winner) d(blender)
-const usersChoiceB = "a";
-if (usersChoiceB === "a") {
-  console.log("CAR");
-} else if (usersChoiceB === "c") {
-  console.log("WINNER");
-} else if (usersChoiceB === "d") {
-  console.log("BLENDER");
-} else {
-  console.log("TRY AGAIN");
-}
+let ticPrice = 150;
+let disAmount = 30;
+let userBal = 200;
+let fanMember = true;
+let disPrice = ticPrice - disAmount
+fanMember ? console.log(disPrice) : console.log(ticPrice);
+userBal >= ticPrice || userBal >= disPrice
+  ? console.log("You can buy the football ticket")
+  : console.log("You do not enough money for the football ticket");
