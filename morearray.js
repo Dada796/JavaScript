@@ -1,0 +1,26 @@
+const africanCountries = ["Nigeria", "Morocco", "Sudan", "Tanzania", "Ghana"];
+console.log(africanCountries.includes("Tanzania"));
+console.log(africanCountries.length);
+africanCountries.unshift("Senegal");
+console.log(africanCountries);
+africanCountries.push("Kenya");
+console.log(africanCountries);
+console.log(africanCountries.sort().reverse());
+console.log(africanCountries.concat(["China", "Indonesia", "Korea"]));
+const moreCountry = africanCountries.find((country) => country.startsWith("M"));
+console.log(moreCountry);
+const moreThan5 = africanCountries.filter((country) => country.length > 5);
+console.log(moreThan5);
+const converted = africanCountries.map((country) => country.toUpperCase());
+console.log(converted);
+const allCountry = africanCountries.every((country) => country.includes("p"));
+console.log(allCountry);
+let myBalance = 5000;
+const transactions = [2000, 4000, -300, 800, -1000];
+const debits = transactions.filter((fund) => fund < 0);
+console.log(debits);
+const credits = transactions.filter((fund) => fund > 0);
+console.log(credits.some((credit) => credit > myBalance));
+const totalBalance = transactions.reduce((a, b) =>  a + b, myBalance);
+console.log(totalBalance);
+
